@@ -35,8 +35,8 @@ async function getImageInfo(url) {
   });
 }
 
-function displayImageInfo(url, container) {
-  getImageInfo(url)
+function displayImageInfo(imgElement, container) {
+  getImageInfo(imgElement.src)
     .then((info) => {
       const formatElement = document.createElement("p");
       formatElement.textContent = `Format: ${info.format}`;
@@ -47,7 +47,7 @@ function displayImageInfo(url, container) {
       container.appendChild(dimensionsElement);
 
       const altElement = document.createElement("p");
-      altElement.textContent = `Alt: ${info.alt}`;
+      altElement.textContent = `Alt: ${imgElement.alt}`;
       container.appendChild(altElement);
 
       const sizeInKB = (info.size / 1024).toFixed(2);
@@ -61,5 +61,5 @@ function displayImageInfo(url, container) {
 const container = document.querySelector("#image-info-container");
 
 images.forEach((img, i) => {
-  displayImageInfo(img.src, infoContainers[i]);
+  displayImageInfo(img, infoContainers[i]);
 });
