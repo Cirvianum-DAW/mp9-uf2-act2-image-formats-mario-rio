@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="styles/main.css" />
   </head>
-  <body>
+  <body class="bg-gray-300">
     <nav class="bg-blue-500 text-white text-center p-5">
       <ul class="flex justify-center space-x-4">
         <li><a href="index.html">Index</a></li>
@@ -22,9 +22,113 @@
     <header class="bg-blue-500 text-white text-center p-5">
       <h1 class="text-4xl">Logotip</h1>
     </header>
-    <main
-      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
-    ></main>
+    <main class="text-base text-center p-10 flex flex-col">
+      <h1 class="text-2xl w-full text-center">Formats</h1>
+      <div
+        class="formats flex flex-row items-center space-x-4 border border-black rounded p-4 mb-4"
+      >
+        <div class="image-container flex flex-col space-y-4">
+          <div class="flex justify-center">
+            <img
+              src="images/logotip/logotip.png"
+              alt="Example 1"
+              class="image w-full max-w-full"
+            />
+          </div>
+          <div class="image-info text-center"></div>
+        </div>
+        <div class="image-container flex flex-col space-y-4">
+          <div class="flex justify-center">
+            <img
+              src="images/logotip/logotip.jpg"
+              alt="Example 2"
+              class="image w-full max-w-full"
+            />
+          </div>
+          <div class="image-info text-center"></div>
+        </div>
+        <div class="image-container flex flex-col space-y-4">
+          <div class="flex justify-center">
+            <img
+              src="images/logotip/logotip.gif"
+              alt="Example 3"
+              class="image w-full max-w-full"
+            />
+          </div>
+          <div class="image-info text-center"></div>
+        </div>
+      </div>
+      <h1 class="text-2xl w-full text-center">Compression Levels</h1>
+      <div
+        class="formats flex flex-row items-center space-x-4 border border-black rounded p-4 mb-4"
+      >
+        <div class="image-container flex flex-col space-y-4">
+          <div class="flex justify-center">
+            <img
+              src="images/logotip/logotip_low.jpg"
+              alt="Example 1"
+              class="image w-full max-w-full"
+            />
+          </div>
+          <div class="image-info text-center"></div>
+        </div>
+        <div class="image-container flex flex-col space-y-4">
+          <div class="flex justify-center">
+            <img
+              src="images/logotip/logotip_medium.jpg"
+              alt="Example 2"
+              class="image w-full max-w-full"
+            />
+          </div>
+          <div class="image-info text-center"></div>
+        </div>
+        <div class="image-container flex flex-col space-y-4">
+          <div class="flex justify-center">
+            <img
+              src="images/logotip/logotip_high.jpg"
+              alt="Example 3"
+              class="image w-full max-w-full"
+            />
+          </div>
+          <div class="image-info text-center"></div>
+        </div>
+      </div>
+      <h1 class="text-2xl w-full text-center">Color Depth</h1>
+      <div
+        class="formats flex flex-row items-center space-x-4 border border-black rounded p-4 mb-4"
+      >
+        <div class="image-container flex flex-col space-y-4">
+          <div class="flex justify-center">
+            <img
+              src="images/logotip/logotip_32bit.png"
+              alt="Example 1"
+              class="image w-full max-w-full"
+            />
+          </div>
+          <div class="image-info text-center"></div>
+        </div>
+        <div class="image-container flex flex-col space-y-4">
+          <div class="flex justify-center">
+            <img
+              src="images/logotip/logotip_24bit.png"
+              alt="Example 2"
+              class="image w-full max-w-full"
+            />
+          </div>
+          <div class="image-info text-center"></div>
+        </div>
+        <div class="image-container flex flex-col space-y-4">
+          <div class="flex justify-center">
+            <img
+              src="images/logotip/logotip_8bit.png"
+              alt="Example 3"
+              class="image w-full max-w-full"
+            />
+          </div>
+          <div class="image-info text-center"></div>
+        </div>
+      </div>
+    </main>
     <script src="scripts/main.js"></script>
   </body>
 </html>
